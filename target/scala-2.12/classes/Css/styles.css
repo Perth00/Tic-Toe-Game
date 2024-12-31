@@ -1,0 +1,55 @@
+/* General styles for buttons */
+.button {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-font-size: 16px;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #7B1FA2;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    -fx-background-color: #7B1FA2;
+    -fx-text-fill: #ffffff;
+}
+
+/* Animation for TextField focus */
+.text-field {
+    -fx-font-size: 16px;
+    -fx-background-color: #efefef;
+    -fx-text-fill: #1a1414;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #7B1FA2;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.text-field:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #4A148C;
+}
+
+.text {
+    -fx-font-size: 24px;
+    -fx-fill: #4b4949;
+    -fx-effect: dropshadow(three-pass-box, rgba(28, 147, 210, 0.8), 10, 0, 0, 0);
+}
+
+.grid-pane {
+    -fx-background-color: #CE93D8;
+    -fx-background-radius: 10;
+    -fx-padding: 20;
+    -fx-border-radius: 10;
+    -fx-border-color: #4A148C;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+

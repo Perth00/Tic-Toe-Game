@@ -1,0 +1,52 @@
+/* alertStyles.css */
+
+/* Base styling for the dialog */
+.custom-alert {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-background-radius: 10px; /* Rounded corners */
+    -fx-border-color: #8e44ad; /* Purple border color */
+    -fx-border-radius: 10px; /* Rounded corners for border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0); /* Shadow effect */
+}
+
+/* Header panel styling */
+.custom-alert .header-panel {
+    -fx-background-color: linear-gradient(to bottom, #8e44ad, #6c3483); /* Gradient background */
+    -fx-background-radius: 10px 10px 0 0; /* Rounded corners, top only */
+    -fx-padding: 10px; /* Padding inside the header */
+}
+
+/* Title label styling */
+.custom-alert .header-panel .label {
+    -fx-font-size: 20px; /* Larger font size */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-weight: bold; /* Bold font */
+}
+
+/* Content area styling */
+.custom-alert .content {
+    -fx-background-color: #f0f0f0; /* Light gray background */
+    -fx-padding: 20px; /* Padding inside the content area */
+}
+
+/* Text styling within the content */
+.custom-alert .content .label {
+    -fx-font-size: 16px; /* Font size */
+    -fx-text-fill: #333333; /* Dark text color */
+}
+
+/* OK button styling */
+.custom-alert .button-bar .button {
+    -fx-background-color: #8e44ad; /* Button background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-weight: bold; /* Bold font */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-pref-width: 120px; /* Increased button width */
+    -fx-pref-height: 40px; /* Increased button height */
+}
+
+/* Hover effect for buttons */
+.custom-alert .button-bar .button:hover {
+    -fx-background-color: #6c3483; /* Darker background color on hover */
+}
