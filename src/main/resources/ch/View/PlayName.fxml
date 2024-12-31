@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="378.0" prefWidth="647.0" style="-fx-background-color: #4A148C;" stylesheets="@/Css/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.view.AddPlayerController">
+    <children>
+        <GridPane layoutX="76.0" layoutY="40.0" prefHeight="300.0" prefWidth="550.0" styleClass="grid-pane">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="142.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="170.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="88.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints />
+            </rowConstraints>
+            <children>
+                <Text styleClass="text" text="Enter Player Names" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+                    <GridPane.margin>
+                        <Insets bottom="20.0" />
+                    </GridPane.margin>
+                </Text>
+                <Text style="-fx-font-size: 20px; -fx-fill: #FFFFFF;" text="Player 1:" textAlignment="CENTER" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets right="10.0" />
+                    </GridPane.margin>
+                </Text>
+                <TextField fx:id="player1" prefHeight="30.0" prefWidth="200.0" promptText="Player 1 Name" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets bottom="10.0" />
+                    </GridPane.margin>
+                </TextField>
+                <Text style="-fx-font-size: 20px; -fx-fill: #FFFFFF;" text="Player 2:" textAlignment="CENTER" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets right="10.0" />
+                    </GridPane.margin>
+                </Text>
+                <TextField fx:id="player2" prefHeight="30.0" prefWidth="200.0" promptText="Player 2 Name" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets bottom="10.0" />
+                    </GridPane.margin>
+                </TextField>
+            <Button cancelButton="true" mnemonicParsing="false" onAction="#cancelPlayerNames" prefHeight="25.0" prefWidth="126.0" styleClass="button" text="Cancel" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin>
+            </Button>
+
+                <Button defaultButton="true" mnemonicParsing="false" onAction="#confirmPlayerNames" prefHeight="25.0" prefWidth="172.0" styleClass="button" text="Confirm" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
+
+                    <GridPane.margin>
+                        <Insets top="10.0" />
+                    </GridPane.margin>
+                </Button>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>
