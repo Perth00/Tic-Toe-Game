@@ -85,15 +85,18 @@ Players take turns marking the 3x3 grid.
 The game ends when:
 A player aligns three symbols in a row, column, or diagonal.
 The board is full (draw).
+
 View Player History:
 
 Check win/loss records for all players via the Player History section.
 Technology Stack
+
 Programming Language: Scala 2.19.12
 UI Framework: JavaFX with FXML
 Database: Derby (via ScalikeJDBC)
 Audio: Media integration using ScalaFX.
-Future Enhancements
+
+Future Enhancements:
 Add AI difficulty levels for bot gameplay.
 Implement multiplayer support over the network.
 Expand player history with detailed game records.
